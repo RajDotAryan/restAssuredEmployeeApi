@@ -1,0 +1,2 @@
+/home/qapitol/Automation/com.restAssured_EmployeeApiProject/src/test/java/com/restAssured_employeeApi/base/TestBase.java
+/home/qapitol/Automation/com.restAssured_EmployeeApiProject/src/test/java/com/restAssured_employeeApi/testCases/TC01_GET_allEmployeesDetails.java

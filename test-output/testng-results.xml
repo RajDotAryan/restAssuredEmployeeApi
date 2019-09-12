@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4898" started-at="2019-09-12T23:21:45 IST" finished-at="2019-09-12T23:21:50 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4898" started-at="2019-09-12T23:21:45 IST" finished-at="2019-09-12T23:21:50 IST">
+      <class name="com.restAssuredEmployeeApi.testCases.AddEmployee">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.restAssuredEmployeeApi.testCases.AddEmployee@33f88ab]" name="setUp" is-config="true" duration-ms="83" started-at="2019-09-12T23:21:45 IST" finished-at="2019-09-12T23:21:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addEmployeeDetails()[pri:0, instance:com.restAssuredEmployeeApi.testCases.AddEmployee@33f88ab]" name="addEmployeeDetails" is-config="true" duration-ms="4715" started-at="2019-09-12T23:21:45 IST" finished-at="2019-09-12T23:21:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDetails -->
+        <test-method status="PASS" signature="ValidateResponse()[pri:0, instance:com.restAssuredEmployeeApi.testCases.AddEmployee@33f88ab]" name="ValidateResponse" duration-ms="55" started-at="2019-09-12T23:21:50 IST" finished-at="2019-09-12T23:21:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateResponse -->
+      </class> <!-- com.restAssuredEmployeeApi.testCases.AddEmployee -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

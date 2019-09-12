@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="APITest">
+		<classes>
+			<class
+				name="com.restAssured_employeeApi.testCases.TC01_GET_allEmployeesDetails" />
+			<class
+				name="com.restAssured_employeeApi.testCases.TC02_GET_employeeDetails" />
+			<class
+				name="com.restAssured_employeeApi.testCases.TC03_POST_addEmployee" />
+			<class
+				name="com.restAssured_employeeApi.testCases.TC04_PUT_updateEmployeeDetails" />
+			<class
+				name="com.restAssured_employeeApi.testCases.TC05_DELETE_deleteEmployee" />
+		</classes>
+	</test> <!-- APITest -->
+</suite> <!-- Suite -->
