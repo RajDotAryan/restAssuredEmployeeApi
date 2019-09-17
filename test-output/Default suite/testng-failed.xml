@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.restAssuredEmployeeApi.testCases.AddEmployee">
+      <class name="com.restAssuredEmployeeApi.testCases.GetEmployee">
         <methods>
-          <include name="ValidateResponse"/>
-          <include name="addEmployeeDetails"/>
           <include name="setUp"/>
+          <include name="ValidateResponse"/>
+          <include name="getEmployeeDetails"/>
         </methods>
-      </class> <!-- com.restAssuredEmployeeApi.testCases.AddEmployee -->
+      </class> <!-- com.restAssuredEmployeeApi.testCases.GetEmployee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

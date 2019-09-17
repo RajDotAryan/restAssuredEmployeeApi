@@ -42,6 +42,7 @@ public class DeleteEmployee extends TestBase {
 
 	@Test
 	void ValidateResponse() {
+		logger.info("Started The Test Case "+DeleteEmployee.class.getSimpleName());
 		int responseCode = response.getStatusCode();
 		logger.info("Response Code is "+responseCode);
 		if(responseCode==200) {

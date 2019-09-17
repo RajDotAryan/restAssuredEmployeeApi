@@ -13,7 +13,7 @@ public class TestBase {
 	public static Response response;
 	public static String url = "http://localhost:9090/company";
 	
-	public String empIdValidation = "649";
+	public String empIdValidation = "000";
 	
 	@BeforeMethod
 	@BeforeClass
