@@ -1,2 +1,7 @@
-/home/qapitol/Automation/com.restAssured_EmployeeApiProject/src/test/java/com/restAssured_employeeApi/base/TestBase.java
-/home/qapitol/Automation/com.restAssured_EmployeeApiProject/src/test/java/com/restAssured_employeeApi/testCases/TC01_GET_allEmployeesDetails.java
+/home/qapitol/Automation/com.restAssuredEmployeeApi/src/test/java/com/restAssuredEmployeeApi/base/TestBase.java
+/home/qapitol/Automation/com.restAssuredEmployeeApi/src/test/java/com/restAssuredEmployeeApi/testCases/DeleteEmployee.java
+/home/qapitol/Automation/com.restAssuredEmployeeApi/src/test/java/com/restAssuredEmployeeApi/testCases/UpdateEmployee.java
+/home/qapitol/Automation/com.restAssuredEmployeeApi/src/test/java/com/restAssuredEmployeeApi/testCases/GetAllEmployees.java
+/home/qapitol/Automation/com.restAssuredEmployeeApi/src/test/java/com/restAssuredEmployeeApi/utilities/RestUtils.java
+/home/qapitol/Automation/com.restAssuredEmployeeApi/src/test/java/com/restAssuredEmployeeApi/testCases/GetEmployee.java
+/home/qapitol/Automation/com.restAssuredEmployeeApi/src/test/java/com/restAssuredEmployeeApi/testCases/AddEmployee.java

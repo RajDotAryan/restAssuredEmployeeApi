@@ -1,5 +1,8 @@
 package com.restAssuredEmployeeApi.testCases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.apache.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.Assert;

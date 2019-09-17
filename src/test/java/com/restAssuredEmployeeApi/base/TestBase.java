@@ -1,5 +1,6 @@
 package com.restAssuredEmployeeApi.base;
 
+import org.testng.annotations.BeforeMethod;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.BeforeClass;
 
@@ -14,6 +15,7 @@ public class TestBase {
 	
 	public String empIdValidation = "649";
 	
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() {
 		

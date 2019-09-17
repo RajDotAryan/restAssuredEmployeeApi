@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.48 sec <<< FAILURE! - in TestSuite
+ValidateResponse(com.restAssuredEmployeeApi.testCases.DeleteEmployee)  Time elapsed: 0.005 sec  <<< FAILURE!
+java.lang.AssertionError: Employee is not Deleted did not expect to find [true] but found [false]
+	at com.restAssuredEmployeeApi.testCases.DeleteEmployee.ValidateResponse(DeleteEmployee.java:60)
+
