@@ -1,50 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="APITest(failed)">
+  <listeners>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.restAssured_employeeApi.testCases.TC05_DELETE_deleteEmployee">
+      <class name="com.restAssuredEmployeeApi.testCases.GetEmployee">
         <methods>
-          <include name="tearDown"/>
-          <include name="checkResponseCode"/>
-          <include name="deleteEmployee"/>
           <include name="setUp"/>
-        </methods>
-      </class> <!-- com.restAssured_employeeApi.testCases.TC05_DELETE_deleteEmployee -->
-      <class name="com.restAssured_employeeApi.testCases.TC01_GET_allEmployeesDetails">
-        <methods>
-          <include name="checkResponseCode"/>
-          <include name="tearDown"/>
-          <include name="getAllEmployeesDetails"/>
-          <include name="setUp"/>
-          <include name="checkResponseBody"/>
-        </methods>
-      </class> <!-- com.restAssured_employeeApi.testCases.TC01_GET_allEmployeesDetails -->
-      <class name="com.restAssured_employeeApi.testCases.TC03_POST_addEmployee">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="addEmployee"/>
-          <include name="checkResponseCode"/>
-        </methods>
-      </class> <!-- com.restAssured_employeeApi.testCases.TC03_POST_addEmployee -->
-      <class name="com.restAssured_employeeApi.testCases.TC02_GET_employeeDetails">
-        <methods>
-          <include name="tearDown"/>
-          <include name="checkResponseCode"/>
-          <include name="setUp"/>
-          <include name="checkResponseBody"/>
+          <include name="validateResponseOfGetEmployee"/>
           <include name="getEmployeeDetails"/>
         </methods>
-      </class> <!-- com.restAssured_employeeApi.testCases.TC02_GET_employeeDetails -->
-      <class name="com.restAssured_employeeApi.testCases.TC04_PUT_updateEmployeeDetails">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="checkResponseCode"/>
-          <include name="updateEmployee"/>
-        </methods>
-      </class> <!-- com.restAssured_employeeApi.testCases.TC04_PUT_updateEmployeeDetails -->
+      </class> <!-- com.restAssuredEmployeeApi.testCases.GetEmployee -->
     </classes>
-  </test> <!-- APITest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,36 +1,28 @@
 package com.restAssuredEmployeeApi.testCases;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.AssertJUnit;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.restAssuredEmployeeApi.base.TestBase;
-
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 
 public class GetAllEmployees extends TestBase {
-
+	
 	private static Logger logger = Logger.getLogger(GetAllEmployees.class.getName());
-
 	boolean flag = false;
 
-	@BeforeClass
+	@BeforeMethod
 	void getAllEmployeesDetails() throws InterruptedException{
-
 		RestAssured.baseURI = url;
 		httpRequest = RestAssured.given();
 		response = httpRequest.request(Method.GET, "/employees");
-
 	}
 
 	@Test
-	void ValidateResponse() {
+	void validateResponseOfGetAllEmployees() {
 		logger.info("Started The Test Case "+GetAllEmployees.class.getSimpleName());
 		int responseCode = response.getStatusCode();
 		logger.info("Response Code is "+responseCode);
@@ -47,9 +39,7 @@ public class GetAllEmployees extends TestBase {
 		}else {
 			logger.info("Response code is other than 200, expected is 200 and actual is " +responseCode);
 		}
-		
 		Assert.assertTrue(flag, "Getting All employees details failed");
 
 	}
-
 }
