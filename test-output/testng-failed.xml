@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="resources.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.restAssuredEmployeeApi.testCases.GetEmployee">
+      <class name="com.restassuredemployeeapi.testCases.GetEmployee">
         <methods>
-          <include name="setUp"/>
-          <include name="validateResponseOfGetEmployee"/>
           <include name="getEmployeeDetails"/>
+          <include name="validateResponseOfGetEmployee"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.restAssuredEmployeeApi.testCases.GetEmployee -->
+      </class> <!-- com.restassuredemployeeapi.testCases.GetEmployee -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

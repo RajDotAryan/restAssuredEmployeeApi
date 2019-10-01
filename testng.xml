@@ -6,11 +6,11 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.restAssuredEmployeeApi.testCases.AddEmployee"/>
-      <class name="com.restAssuredEmployeeApi.testCases.GetAllEmployees"/>
-      <class name="com.restAssuredEmployeeApi.testCases.UpdateEmployee"/>
-      <class name="com.restAssuredEmployeeApi.testCases.GetEmployee"/>
-      <class name="com.restAssuredEmployeeApi.testCases.DeleteEmployee"/>
+      <class name="com.restassuredemployeeapi.testCases.AddEmployee"/>
+      <class name="com.restassuredemployeeapi.testCases.GetAllEmployees"/>
+      <class name="com.restassuredemployeeapi.testCases.UpdateEmployee"/>
+      <class name="com.restassuredemployeeapi.testCases.GetEmployee"/>
+      <class name="com.restassuredemployeeapi.testCases.DeleteEmployee"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

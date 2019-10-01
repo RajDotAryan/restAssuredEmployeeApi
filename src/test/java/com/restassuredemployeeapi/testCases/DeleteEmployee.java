@@ -1,10 +1,12 @@
-package com.restAssuredEmployeeApi.testCases;
+package com.restassuredemployeeapi.testCases;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.restAssuredEmployeeApi.base.TestBase;
+
+import com.restassuredemployeeapi.base.TestBase;
+
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
@@ -31,17 +33,12 @@ public class DeleteEmployee extends TestBase {
 		logger.info("Started The Test Case "+DeleteEmployee.class.getSimpleName());
 		int responseCode = response.getStatusCode();
 		logger.info("Response Code is "+responseCode);
-		if(responseCode==200) {
-			response = httpRequest.request(Method.GET, "/employees");
-			String responseBody = response.getBody().asString();
-			logger.info("Response Body is "+responseBody);
-			if(!responseBody.contains(empId)) {
-				logger.info("Employee is Deleted Successfully");
-				flag = true;
-			}
-		}else {
-			logger.info("Response code is other than 200, expected is 200 and actual is " +responseCode);
-		}
-		Assert.assertTrue(flag, "Employee is not Deleted");
+		Assert.assertEquals(responseCode, 200, "Response status code is not validated");
+		response = httpRequest.request(Method.GET, "/employees");
+		String responseBody = response.getBody().asString();
+		logger.info("Response Body is "+responseBody);
+		
+		softAssert.assertNotEquals(responseBody.contains(empId), "Emp Id is not present in the body");
+		softAssert.assertAll();
 	}
 }

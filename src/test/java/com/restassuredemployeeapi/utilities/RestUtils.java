@@ -1,4 +1,4 @@
-package com.restAssuredEmployeeApi.utilities;
+package com.restassuredemployeeapi.utilities;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

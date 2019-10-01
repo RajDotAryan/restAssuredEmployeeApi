@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="9" passed="5">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8987" started-at="2019-09-20T13:11:52 IST" finished-at="2019-09-20T13:12:01 IST">
+  <suite name="Suite" duration-ms="8815" started-at="2019-10-01T06:43:23Z" finished-at="2019-10-01T06:43:32Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8987" started-at="2019-09-20T13:11:52 IST" finished-at="2019-09-20T13:12:01 IST">
-      <class name="com.restAssuredEmployeeApi.testCases.UpdateEmployee">
-        <test-method status="PASS" signature="updateEmployee()[pri:0, instance:com.restAssuredEmployeeApi.testCases.UpdateEmployee@6ee52dcd]" name="updateEmployee" is-config="true" duration-ms="2021" started-at="2019-09-20T13:11:57 IST" finished-at="2019-09-20T13:11:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateEmployee -->
-        <test-method status="PASS" signature="validateResponseOfUpdateEmployee()[pri:0, instance:com.restAssuredEmployeeApi.testCases.UpdateEmployee@6ee52dcd]" name="validateResponseOfUpdateEmployee" duration-ms="46" started-at="2019-09-20T13:11:59 IST" finished-at="2019-09-20T13:11:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseOfUpdateEmployee -->
-      </class> <!-- com.restAssuredEmployeeApi.testCases.UpdateEmployee -->
-      <class name="com.restAssuredEmployeeApi.testCases.AddEmployee">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.restAssuredEmployeeApi.testCases.AddEmployee@76f2b07d]" name="setUp" is-config="true" duration-ms="41" started-at="2019-09-20T13:11:52 IST" finished-at="2019-09-20T13:11:53 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addEmployeeDetails()[pri:0, instance:com.restAssuredEmployeeApi.testCases.AddEmployee@76f2b07d]" name="addEmployeeDetails" is-config="true" duration-ms="4188" started-at="2019-09-20T13:11:53 IST" finished-at="2019-09-20T13:11:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addEmployeeDetails -->
-        <test-method status="PASS" signature="validateResponseOfAddEmployee()[pri:0, instance:com.restAssuredEmployeeApi.testCases.AddEmployee@76f2b07d]" name="validateResponseOfAddEmployee" duration-ms="78" started-at="2019-09-20T13:11:57 IST" finished-at="2019-09-20T13:11:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseOfAddEmployee -->
-      </class> <!-- com.restAssuredEmployeeApi.testCases.AddEmployee -->
-      <class name="com.restAssuredEmployeeApi.testCases.GetEmployee">
-        <test-method status="PASS" signature="getEmployeeDetails()[pri:0, instance:com.restAssuredEmployeeApi.testCases.GetEmployee@4493d195]" name="getEmployeeDetails" is-config="true" duration-ms="20" started-at="2019-09-20T13:11:59 IST" finished-at="2019-09-20T13:11:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getEmployeeDetails -->
-        <test-method status="PASS" signature="validateResponseOfGetEmployee()[pri:0, instance:com.restAssuredEmployeeApi.testCases.GetEmployee@4493d195]" name="validateResponseOfGetEmployee" duration-ms="11" started-at="2019-09-20T13:11:59 IST" finished-at="2019-09-20T13:11:59 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseOfGetEmployee -->
-      </class> <!-- com.restAssuredEmployeeApi.testCases.GetEmployee -->
-      <class name="com.restAssuredEmployeeApi.testCases.GetAllEmployees">
-        <test-method status="PASS" signature="getAllEmployeesDetails()[pri:0, instance:com.restAssuredEmployeeApi.testCases.GetAllEmployees@704a52ec]" name="getAllEmployeesDetails" is-config="true" duration-ms="20" started-at="2019-09-20T13:11:57 IST" finished-at="2019-09-20T13:11:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAllEmployeesDetails -->
-        <test-method status="PASS" signature="validateResponseOfGetAllEmployees()[pri:0, instance:com.restAssuredEmployeeApi.testCases.GetAllEmployees@704a52ec]" name="validateResponseOfGetAllEmployees" duration-ms="436" started-at="2019-09-20T13:11:57 IST" finished-at="2019-09-20T13:11:57 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateResponseOfGetAllEmployees -->
-      </class> <!-- com.restAssuredEmployeeApi.testCases.GetAllEmployees -->
-      <class name="com.restAssuredEmployeeApi.testCases.DeleteEmployee">
-        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:com.restAssuredEmployeeApi.testCases.DeleteEmployee@2781e022]" name="deleteEmployee" is-config="true" duration-ms="2041" started-at="2019-09-20T13:11:59 IST" finished-at="2019-09-20T13:12:01 IST">
+    <test name="Test" duration-ms="8815" started-at="2019-10-01T06:43:23Z" finished-at="2019-10-01T06:43:32Z">
+      <class name="com.restassuredemployeeapi.testCases.DeleteEmployee">
+        <test-method status="PASS" signature="deleteEmployee()[pri:0, instance:com.restassuredemployeeapi.testCases.DeleteEmployee@5700d6b1]" name="deleteEmployee" is-config="true" duration-ms="2041" started-at="2019-10-01T12:13:29Z" finished-at="2019-10-01T12:13:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteEmployee -->
-        <test-method status="PASS" signature="validateResponseOfDeleteEmployee()[pri:0, instance:com.restAssuredEmployeeApi.testCases.DeleteEmployee@2781e022]" name="validateResponseOfDeleteEmployee" duration-ms="38" started-at="2019-09-20T13:12:01 IST" finished-at="2019-09-20T13:12:01 IST">
+        <test-method status="PASS" signature="validateResponseOfDeleteEmployee()[pri:0, instance:com.restassuredemployeeapi.testCases.DeleteEmployee@5700d6b1]" name="validateResponseOfDeleteEmployee" duration-ms="18" started-at="2019-10-01T12:13:31Z" finished-at="2019-10-01T12:13:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateResponseOfDeleteEmployee -->
-      </class> <!-- com.restAssuredEmployeeApi.testCases.DeleteEmployee -->
+      </class> <!-- com.restassuredemployeeapi.testCases.DeleteEmployee -->
+      <class name="com.restassuredemployeeapi.testCases.AddEmployee">
+        <test-method status="PASS" signature="addEmployeeDetails()[pri:0, instance:com.restassuredemployeeapi.testCases.AddEmployee@73ad2d6]" name="addEmployeeDetails" is-config="true" duration-ms="4131" started-at="2019-10-01T12:13:23Z" finished-at="2019-10-01T12:13:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeDetails -->
+        <test-method status="PASS" signature="validateResponseOfAddEmployee()[pri:0, instance:com.restassuredemployeeapi.testCases.AddEmployee@73ad2d6]" name="validateResponseOfAddEmployee" duration-ms="55" started-at="2019-10-01T12:13:27Z" finished-at="2019-10-01T12:13:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseOfAddEmployee -->
+      </class> <!-- com.restassuredemployeeapi.testCases.AddEmployee -->
+      <class name="com.restassuredemployeeapi.testCases.GetEmployee">
+        <test-method status="PASS" signature="getEmployeeDetails()[pri:0, instance:com.restassuredemployeeapi.testCases.GetEmployee@1ce92674]" name="getEmployeeDetails" is-config="true" duration-ms="16" started-at="2019-10-01T12:13:29Z" finished-at="2019-10-01T12:13:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEmployeeDetails -->
+        <test-method status="PASS" signature="validateResponseOfGetEmployee()[pri:0, instance:com.restassuredemployeeapi.testCases.GetEmployee@1ce92674]" name="validateResponseOfGetEmployee" duration-ms="10" started-at="2019-10-01T12:13:29Z" finished-at="2019-10-01T12:13:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseOfGetEmployee -->
+      </class> <!-- com.restassuredemployeeapi.testCases.GetEmployee -->
+      <class name="com.restassuredemployeeapi.testCases.GetAllEmployees">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.restassuredemployeeapi.testCases.GetAllEmployees@598067a5]" name="setUp" is-config="true" duration-ms="32" started-at="2019-10-01T12:13:23Z" finished-at="2019-10-01T12:13:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getAllEmployeesDetails()[pri:0, instance:com.restassuredemployeeapi.testCases.GetAllEmployees@598067a5]" name="getAllEmployeesDetails" is-config="true" duration-ms="30" started-at="2019-10-01T12:13:27Z" finished-at="2019-10-01T12:13:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllEmployeesDetails -->
+        <test-method status="PASS" signature="validateResponseOfGetAllEmployees()[pri:0, instance:com.restassuredemployeeapi.testCases.GetAllEmployees@598067a5]" name="validateResponseOfGetAllEmployees" duration-ms="408" started-at="2019-10-01T12:13:27Z" finished-at="2019-10-01T12:13:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseOfGetAllEmployees -->
+      </class> <!-- com.restassuredemployeeapi.testCases.GetAllEmployees -->
+      <class name="com.restassuredemployeeapi.testCases.UpdateEmployee">
+        <test-method status="PASS" signature="updateEmployee()[pri:0, instance:com.restassuredemployeeapi.testCases.UpdateEmployee@7085bdee]" name="updateEmployee" is-config="true" duration-ms="2040" started-at="2019-10-01T12:13:27Z" finished-at="2019-10-01T12:13:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateEmployee -->
+        <test-method status="PASS" signature="validateResponseOfUpdateEmployee()[pri:0, instance:com.restassuredemployeeapi.testCases.UpdateEmployee@7085bdee]" name="validateResponseOfUpdateEmployee" duration-ms="21" started-at="2019-10-01T12:13:29Z" finished-at="2019-10-01T12:13:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseOfUpdateEmployee -->
+      </class> <!-- com.restassuredemployeeapi.testCases.UpdateEmployee -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

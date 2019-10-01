@@ -1,10 +1,15 @@
-package com.restAssuredEmployeeApi.testCases;
+package com.restassuredemployeeapi.testCases;
 
 import org.apache.log4j.Logger;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.restAssuredEmployeeApi.base.TestBase;
+
+import com.restassuredemployeeapi.base.TestBase;
+
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
@@ -22,23 +27,20 @@ public class GetEmployee extends TestBase {
 	}
 
 	@Test
-	void validateResponseOfGetEmployee() {
+	void validateResponseOfGetEmployee() throws Exception {
 		logger.info("Started The Test Case "+GetEmployee.class.getSimpleName());
 		int responseCode = response.getStatusCode();
 		logger.info("Response Code is "+responseCode);
-		if(responseCode==200) {
-			String responseBody = response.getBody().asString();
-			logger.info("Response Body is "+responseBody);
-			JsonPath jsonPathEvaluator = response.jsonPath();
-			String empId = jsonPathEvaluator.get("empId");
-			logger.info("Response empId is " + empId);
-			if(empIdValidation.equals(empId)) {
-				logger.info("Successfully getting the single employee details");
-				flag=true;
-			}
-		}else {
-			logger.info("Response code is other than 200, expected is 200 and actual is " +responseCode);
-		}
-		Assert.assertTrue(flag, "Not getting the single employee details");
+		Assert.assertEquals(responseCode, 200, "Response status code is not validated");
+		String responseBody = response.getBody().asString();
+		logger.info("Response Body is "+responseBody); 
+		JsonPath jsonPathEvaluator = response.jsonPath(); 
+		String empId = jsonPathEvaluator.get("empId");
+		logger.info("Response empId is " + empId);
+		  
+		softAssert.assertTrue(empIdValidation.equals(empId),"Emp Id is not present in the body"); 
+		softAssert.assertAll();
+		 
+			
 	}
 }
